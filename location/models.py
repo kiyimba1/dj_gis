@@ -7,7 +7,7 @@ class Hotel(models.Model):
     address = models.CharField(max_length=255)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
-    loction = models.PointField(null=True)
+    location = models.PointField(null=True)
 
     def __str__(self) -> str:
         return self.name
